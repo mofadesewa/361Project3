@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /* Overall styling */
+#map {
+  height: 30em;
+  width: 55%;
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 0 16px 16px blue;
+}
 
 img {
   align-self: center;
