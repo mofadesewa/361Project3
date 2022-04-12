@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /* Overall styling */
+
 img {
   align-self: center;
   max-width: 100%;
@@ -67,6 +68,20 @@ a.navref:hover {
 
   text-decoration: none;
 }
+
+/* map.html */
+#mapbody {
+  text-align: center;
+  background-color: rgb(177, 129, 209);
+}
+
+#maph1 {
+  font-family: 'BhuTuka Expanded One', cursive;
+  text-decoration: none;
+  font-size: 88px;
+  color: rgb(192, 24, 12);
+}
+
 
 /* index.html */
 #idxbody {
