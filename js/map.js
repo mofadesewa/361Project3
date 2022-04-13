@@ -13,4 +13,11 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), options);
     const trafficLayer = new google.maps.TrafficLayer();
     trafficLayer.setMap(map);
+
+    var Lagloc = new google.maps.LatLng(6.524379, 3.379206);
+    var Abjloc = new google.maps.LatLng(9.076479, 7.398574);
+    var Ibloc = new google.maps.LatLng(7.377536, 3,94704);
+
+    
 }
+google.maps.event.addDomListener(window, 'load', initMap);
