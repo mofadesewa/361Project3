@@ -210,6 +210,29 @@ a.navref:hover {
   }
 
 }
+
+@media screen and (max-width: 540px) {
+
+  nav ul {
+    height: 32px;
+    font-size: 12px;
+  }
+
+  #maph1 {
+    font-family: 'BhuTuka Expanded One', cursive;
+    text-decoration: none;
+    font-size: 88px;
+    color: rgb(192, 24, 12);
+  }
+
+  #map{
+    height: 30em;
+    width: 30%;
+    padding: 5px;
+    box-shadow: 0 0 16px 16px blue;
+  }
+
+}
   
   
   
