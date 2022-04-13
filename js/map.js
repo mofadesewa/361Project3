@@ -18,6 +18,29 @@ function initMap() {
     var Abjloc = new google.maps.LatLng(9.076479, 7.398574);
     var Ibloc = new google.maps.LatLng(7.377536, 3,94704);
 
+    var LagMarker = new google.maps.Marker({
+        position: Lagloc,
+        map,
+        icon: 'https://maps.google.com/mapfiles/kml/pal4/icon47.png',
+        animation: google.maps.Animation.BOUNCE
+      });
     
+      var Lagtext =
+        '<p>Lagos, most populous city</p>';
+      var Laginfo = new google.maps.InfoWindow({
+        content: Lagtext,
+      });
+    
+      LagMarker.addListener('mouseover', function () {
+        Laginfo.open(map, this);
+      });
+      LagMarker.addListener('mouseout', function () {
+        Laginfo.close();
+      });
+    
+      google.maps.event.addListener(LagMarker, 'click', function () {
+        map.setCenter(LagMarker.getPosition());
+        map.setZoom(14);
+      });
 }
 google.maps.event.addDomListener(window, 'load', initMap);
