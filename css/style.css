@@ -195,7 +195,7 @@ a.navref:hover {
 
 /*mobile friendly*/
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 540px) {
 
   nav ul {
     height: 32px;
