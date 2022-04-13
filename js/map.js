@@ -22,7 +22,6 @@ function initMap() {
         position: Lagloc,
         map,
         icon: 'https://maps.google.com/mapfiles/kml/pal4/icon49.png',
-        /*animation: google.maps.Animation.BOUNCE */
       });
     
     var Lagtext =
@@ -65,6 +64,30 @@ function initMap() {
     
     google.maps.event.addListener(AbjMarker, 'click', function () {
     map.setCenter(AbjMarker.getPosition());
+    map.setZoom(14);
+    });
+
+    var IbMarker = new google.maps.Marker({
+        position: Ibloc,
+        map,
+        icon: 'https://maps.google.com/mapfiles/kml/pal4/icon49.png',
+      });
+
+    var Ibtext =
+    '<p>Ibadan, city</p>';
+    var Ibinfo = new google.maps.InfoWindow({
+    content: Ibtext,
+    });
+    
+    IbMarker.addListener('mouseover', function () {
+    Ibinfo.open(map, this);
+    });
+    IbMarker.addListener('mouseout', function () {
+    Ibinfo.close();
+    });
+    
+    google.maps.event.addListener(IbMarker, 'click', function () {
+    map.setCenter(IbMarker.getPosition());
     map.setZoom(14);
     });
 }
