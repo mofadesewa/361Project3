@@ -192,6 +192,24 @@ a.navref:hover {
   width: 55%;
   box-shadow: 0 0 16px 16px blue;
 }
+
+/*mobile friendly*/
+
+@media screen and (max-width: 590px) {
+
+  nav ul {
+    height: 32px;
+    font-size: small;
+  }
+
+  #maph1 {
+    font-family: 'BhuTuka Expanded One', cursive;
+    text-decoration: none;
+    font-size: 88px;
+    color: rgb(192, 24, 12);
+  }
+
+}
   
   
   
