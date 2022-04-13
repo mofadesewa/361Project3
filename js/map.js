@@ -21,7 +21,7 @@ function initMap() {
     var LagMarker = new google.maps.Marker({
         position: Lagloc,
         map,
-        icon: 'https://maps.google.com/mapfiles/kml/pal4/icon47.png',
+        icon: 'https://maps.google.com/mapfiles/kml/pal4/icon49.png',
         animation: google.maps.Animation.BOUNCE
       });
     
