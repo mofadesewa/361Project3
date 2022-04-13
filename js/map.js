@@ -2,7 +2,7 @@ function initMap() {
     var Nloc = new google.maps.LatLng(9.081999, 8.675277);
     var options = {
       center: Nloc,
-      zoom: 7,
+      zoom: 6,
       zoomControl: true,
       gestureHandling: "greedy",
       scaleControl: true,
